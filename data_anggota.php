@@ -15,7 +15,7 @@ $jumlah = $hasil ? mysqli_num_rows($hasil) : 0;
 <body>
     <h1>Data Anggota Perpustakaan</h1>
     <p>Jumlah anggota: <?php echo $jumlah; ?></p>
-    <table border = "1">
+    <table border = "1" cellpadding="8" cellspacing="0">
         <tr>
             <th>No</th><th>No. Anggota</th><th>Nama Lengkap</th><th>Email</th><th>No. HP</th>
             <th>Jenis Anggota</th><th>Alamat</th><th>Aksi</th>
@@ -39,7 +39,8 @@ $jumlah = $hasil ? mysqli_num_rows($hasil) : 0;
             </td>
         </tr>
         <?php } ?>
-    </table>
+    </table><br>
+    <a href="form_anggota.php">Kembali ke Formulir</button>
     <?php if ($hasil) { mysqli_free_result($hasil); } ?>
 </body>
 </html>
