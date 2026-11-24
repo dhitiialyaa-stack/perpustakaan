@@ -10,23 +10,12 @@ $jumlah = $hasil ? mysqli_num_rows($hasil) : 0;
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Anggota Perpustakaan</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background: #eef3fb; color: #222; }
-        h1 { color: #1f3864; }
-        table { border-collapse: collapse; background: #fff; }
-        th, td { border: 1px solid #999; padding: 8px 12px; text-align: left; }
-        th { background: #1f3864; color: #fff; }
-        tr:nth-child(even) td { background: #f3f6fc; }
-        form.inline { display: inline; }
-</style>
-    </style>
 </head>
 <body>
     <h1>Data Anggota Perpustakaan</h1>
     <p>Jumlah anggota: <?php echo $jumlah; ?></p>
-    <table>
+    <table border = "1">
         <tr>
             <th>No</th><th>No. Anggota</th><th>Nama Lengkap</th><th>Email</th><th>No. HP</th>
             <th>Jenis Anggota</th><th>Alamat</th><th>Aksi</th>
