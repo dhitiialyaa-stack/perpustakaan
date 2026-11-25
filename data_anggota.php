@@ -30,6 +30,10 @@ $jumlah = $hasil ? mysqli_num_rows($hasil) : 0;
             <td><?php echo htmlspecialchars($baris['jenis_anggota']); ?></td>
             <td><?php echo htmlspecialchars($baris['alamat']); ?></td>
             <td>
+                <a href="edit_anggota.php?id=<?= $baris['id']; ?>">
+                    Edit
+                </a>
+                
                 <a href="detail.php?id=<?php echo (int) $baris['id']; ?>">Detail</a>
                 <form class="inline" action="hapus.php" method="post"
                 onsubmit="return confirm('Yakin ingin menghapus data ini?');">
